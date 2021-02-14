@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<center>
+
+
+<br>
+<br>
+<label>enter any string : 
+<input type="text" id="s" ></label>
+<br><br>
+<button onclick="ispystring()">Check</button>
+<p id="z"></p>
+
+<script>
+function ispystring() {
+var str=document.getElementById("s").value;
+if (str.substring(0, 2) === "Py" || str.substring(0, 2) === "py"|| str.substring === null) 
+{
+document.getElementById("z").innerHTML = str;
+}
+else{
+document.getElementById("z").innerHTML = "Py"+str;
+}
+}
+</script>
+
+</center>
+</body>
+</html>
